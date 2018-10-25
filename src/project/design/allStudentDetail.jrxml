@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="allStudentDetail" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="f21f6c6b-063a-4246-819e-d9d21f01e516">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<field name="Student ID" class="java.lang.String"/>
+	<field name="Name" class="java.lang.String"/>
+	<field name="Address" class="java.lang.String"/>
+	<field name="Tele. No" class="java.lang.String"/>
+	<field name="Register Date" class="java.lang.String"/>
+	<field name="Register Fee" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="84" splitType="Stretch">
+			<image>
+				<reportElement x="0" y="0" width="74" height="61" uuid="124874e2-c7b6-4a19-a2ad-b7b148292265"/>
+				<imageExpression><![CDATA["C:\\Users\\Lahiru Sandeepa\\Documents\\New Folder\\ProjectSMS\\src\\image\\dakuna.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="89" y="0" width="449" height="31" uuid="ea6c90d6-9180-48f6-b4b7-8c8cb7688c3b"/>
+				<textElement textAlignment="Center">
+					<font size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DAKUNA EDUCATION CENTER]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="438" y="44" width="100" height="17" uuid="524d2f3c-ac06-4cf3-ac55-dca231053a3f"/>
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[Rahula Road,]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="438" y="61" width="100" height="20" uuid="eb7e09e3-c7b8-426e-b555-6e296b8daac7"/>
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[Matara.]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="83" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="89" height="20" uuid="5a6b1dd2-5ea2-4ad3-b2e6-e76e61d3ec5a"/>
+				<textElement>
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Official Receipt]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="225" y="44" width="100" height="20" uuid="387f3976-c539-433a-9f17-b10171b67326"/>
+				<textElement textAlignment="Center">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[All Student Detail]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="23" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="62" height="20" uuid="def16a7f-1b7a-4cb3-a29a-43e4e062efa0"/>
+				<text><![CDATA[Student ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="62" y="0" width="100" height="20" uuid="3ea3513f-bc6a-41d3-a6e0-c8181a8ac769"/>
+				<text><![CDATA[Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="162" y="0" width="147" height="20" uuid="17fd37e9-9294-4435-b1af-9bd7f63d448e"/>
+				<text><![CDATA[Address]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="309" y="0" width="81" height="20" uuid="2fa3f66d-7ef4-42ad-aab1-8c10b73c95a2"/>
+				<text><![CDATA[Tele. No]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="390" y="0" width="88" height="20" uuid="cd599cb8-2b09-4e26-b258-637a47bfecdf"/>
+				<text><![CDATA[Register Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="478" y="0" width="77" height="20" uuid="9b876956-7e62-4e27-a549-e3b230472f2c"/>
+				<text><![CDATA[Register Fee]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="20" width="555" height="1" uuid="0239763b-6439-43e2-86c0-03821544b334"/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="21" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="62" height="20" uuid="a905e896-87fa-482d-9f5f-663fb4bf4928"/>
+				<textFieldExpression><![CDATA[$F{Student ID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="62" y="0" width="100" height="20" uuid="eb1f622d-00b3-4aba-830a-7003391024d7"/>
+				<textFieldExpression><![CDATA[$F{Name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="162" y="0" width="147" height="20" uuid="f624f5ca-0c55-42ca-8054-8fa6def7d3d2"/>
+				<textFieldExpression><![CDATA[$F{Address}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="309" y="0" width="81" height="20" uuid="9449be35-26ab-4037-8028-1b91c500a7d9"/>
+				<textFieldExpression><![CDATA[$F{Tele. No}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="390" y="0" width="88" height="20" uuid="b26ccab0-4fe9-4ec1-b36b-eb67a821fc5d"/>
+				<textFieldExpression><![CDATA[$F{Register Date}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="478" y="0" width="77" height="20" uuid="3bcb8358-2a06-4223-9690-a433d9810c94"/>
+				<textFieldExpression><![CDATA[$F{Register Fee}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="58" splitType="Stretch">
+			<staticText>
+				<reportElement x="378" y="22" width="132" height="16" uuid="b6c2fb89-5a5a-499d-aaf9-62f36f9d7f56"/>
+				<text><![CDATA[Dakuna Education Center,]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="378" y="38" width="132" height="20" uuid="f3e00e07-46b3-471e-b3d4-250c6a0d7e1e"/>
+				<text><![CDATA[Manager.]]></text>
+			</staticText>
+			<line>
+				<reportElement x="378" y="22" width="132" height="1" uuid="4b1689df-d24c-43b1-b57a-0f27789dd2f6"/>
+				<graphicElement>
+					<pen lineStyle="Dotted"/>
+				</graphicElement>
+			</line>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="classDetailOfTeacher" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="029cca7f-b0d4-4d67-8b41-7153902d29c4">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="220"/>
+	<parameter name="teacherId" class="java.lang.String"/>
+	<parameter name="teacherName" class="java.lang.String"/>
+	<parameter name="address" class="java.lang.String"/>
+	<parameter name="nic" class="java.lang.String"/>
+	<parameter name="teleNo" class="java.lang.String"/>
+	<field name="Subject" class="java.lang.String"/>
+	<field name="Grade" class="java.lang.String"/>
+	<field name="Day" class="java.lang.String"/>
+	<field name="Period" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="114" splitType="Stretch">
+			<image>
+				<reportElement x="0" y="0" width="73" height="66" uuid="57e6a56e-646c-46c1-9684-12c54ec3eb7a"/>
+				<imageExpression><![CDATA["C:\\Users\\Lahiru Sandeepa\\Documents\\New Folder\\ProjectSMS\\src\\image\\dakuna.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="94" y="0" width="441" height="33" uuid="70f77ee3-f288-44d3-8e78-a61b5c6a6db9"/>
+				<textElement textAlignment="Center">
+					<font size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DAKUNA EDUCATION CENTER]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="435" y="49" width="100" height="17" uuid="418af7e5-900d-4599-bfd2-813ec24f382c"/>
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[Rahula Road,]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="435" y="66" width="100" height="20" uuid="f6d0849d-3331-4ec3-a6d8-c59998b9d140"/>
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[Matara.]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="263" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="94" height="20" uuid="c07a3be0-6e74-4915-be25-aae5733b4b7e"/>
+				<textElement>
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Official Receipt]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="18" y="46" width="76" height="16" uuid="95cabc3d-736a-40f0-b6a5-6be8b789b4de"/>
+				<text><![CDATA[Teacher ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="18" y="73" width="76" height="16" uuid="fc9f253b-dcee-4e68-ac1c-ab6b8c2cfde4"/>
+				<text><![CDATA[Teacher Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="18" y="101" width="76" height="16" uuid="c6fe395a-f794-4cc8-b906-d15ffd347594"/>
+				<text><![CDATA[Address]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="18" y="127" width="76" height="16" uuid="a9c73dd1-8807-4ed6-8369-f0b2b09d2b1e"/>
+				<text><![CDATA[NIC]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="18" y="155" width="76" height="16" uuid="475b08f0-7e4d-458c-b6d2-3ec719b96754"/>
+				<text><![CDATA[Tele. No]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="112" y="46" width="302" height="20" uuid="01be0794-c4f2-458a-a346-46881a4db567"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="112" y="73" width="302" height="20" uuid="75ae6bef-3a4d-4273-a250-295a6191f31f"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="112" y="101" width="302" height="20" uuid="e3dd8d72-d82f-4961-9624-4a14e8ba07da"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="112" y="127" width="302" height="20" uuid="157b20c7-e7a0-4d93-b000-2ce2e67b4adb"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="112" y="155" width="302" height="20" uuid="7a70c8d9-9638-48b1-ad94-06ccc91a93fc"/>
+			</rectangle>
+			<textField>
+				<reportElement x="122" y="46" width="292" height="20" uuid="b0c4cbbb-6d6f-4959-b53e-8b6e1f514ba2"/>
+				<textFieldExpression><![CDATA[$P{teacherId}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="122" y="73" width="292" height="20" uuid="beaa214e-6c81-4b35-9a5e-6ee2d6d958b8"/>
+				<textFieldExpression><![CDATA[$P{teacherName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="122" y="101" width="292" height="20" uuid="60423c90-1ab7-4d07-b963-8423a27362d3"/>
+				<textFieldExpression><![CDATA[$P{address}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="122" y="127" width="292" height="20" uuid="59913af0-a851-4e46-acf0-1203013336e2"/>
+				<textFieldExpression><![CDATA[$P{nic}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="122" y="155" width="292" height="20" uuid="225e92a7-28e7-42d9-a9c6-292225d30b06"/>
+				<textFieldExpression><![CDATA[$P{teleNo}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="204" y="214" width="100" height="20" uuid="b7ce7705-aaea-45de-9c65-3e352592cfe1"/>
+				<textElement textAlignment="Center">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Class Detail]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="23" splitType="Stretch">
+			<staticText>
+				<reportElement x="48" y="0" width="100" height="20" uuid="95bc5b79-e67d-436c-98d2-f1320f933945"/>
+				<text><![CDATA[Subject]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="148" y="0" width="100" height="20" uuid="193bac6e-94f1-464b-9407-8d1359c78e2b"/>
+				<text><![CDATA[Grade]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="248" y="0" width="100" height="20" uuid="1449609b-8bcf-481e-b183-7e824330bd01"/>
+				<text><![CDATA[Day]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="348" y="0" width="121" height="20" uuid="7af4584c-9aee-47cc-ad33-8d40414dcc9b"/>
+				<text><![CDATA[Period]]></text>
+			</staticText>
+			<line>
+				<reportElement x="48" y="20" width="421" height="1" uuid="0c96cf5c-bfd1-4531-a24b-e1acbe842828"/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="22" splitType="Stretch">
+			<textField>
+				<reportElement x="48" y="0" width="100" height="20" uuid="1d71e41a-16e0-4b7b-a136-7bdb8ca49f04"/>
+				<textFieldExpression><![CDATA[$F{Subject}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="148" y="0" width="100" height="20" uuid="849473c4-b919-4ae7-a730-859d51c82a2b"/>
+				<textFieldExpression><![CDATA[$F{Grade}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="248" y="0" width="100" height="20" uuid="afef4d58-0122-454e-ab9c-9787ae50bfb8"/>
+				<textFieldExpression><![CDATA[$F{Day}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="348" y="0" width="121" height="20" uuid="53031585-af51-47a1-ada2-555e4fcc656c"/>
+				<textFieldExpression><![CDATA[$F{Period}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch">
+			<staticText>
+				<reportElement x="401" y="21" width="134" height="13" uuid="be99fc53-16b7-4d90-8c25-02b54e3737ea"/>
+				<text><![CDATA[Dakuna Education Center,]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="401" y="34" width="134" height="20" uuid="7e0f30e8-5392-402e-974b-ddc21b18723d"/>
+				<text><![CDATA[Manager.]]></text>
+			</staticText>
+			<line>
+				<reportElement x="401" y="20" width="134" height="1" uuid="60b8f210-0adc-4045-9b50-cff7b61a59bf"/>
+				<graphicElement>
+					<pen lineStyle="Dotted"/>
+				</graphicElement>
+			</line>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

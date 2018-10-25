@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="studentExamDetail" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a6725ecd-3fe2-4cd4-8853-81c7f0a38f5d">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="subject" class="java.lang.String"/>
+	<parameter name="teacher" class="java.lang.String"/>
+	<parameter name="grade" class="java.lang.String"/>
+	<parameter name="day" class="java.lang.String"/>
+	<parameter name="period" class="java.lang.String"/>
+	<parameter name="studentId" class="java.lang.String"/>
+	<parameter name="studentName" class="java.lang.String"/>
+	<field name="Exam Name" class="java.lang.String"/>
+	<field name="Date" class="java.lang.String"/>
+	<field name="Marks" class="java.lang.String"/>
+	<field name="State" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="115" splitType="Stretch">
+			<image>
+				<reportElement x="0" y="0" width="68" height="61" uuid="dc219022-5408-474d-b705-239c7af71763"/>
+				<imageExpression><![CDATA["C:\\Users\\Lahiru Sandeepa\\Documents\\New Folder\\ProjectSMS\\src\\image\\dakuna.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="82" y="0" width="463" height="32" uuid="abf9f4f7-265a-46bb-b2e8-f4853aeb4f8b"/>
+				<textElement textAlignment="Center">
+					<font size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DAKUNA EDUCATION CENTER]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="445" y="45" width="100" height="16" uuid="206fd15c-593f-494e-a19a-4c15161d9e6e"/>
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[Rahula Road,]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="445" y="61" width="100" height="18" uuid="79ae084f-07e6-4c20-b424-8050252ea7cb"/>
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[Matara.]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="279" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="82" height="20" uuid="7cc25e98-e49d-44ed-a4e6-3dff4e6818d4"/>
+				<textElement>
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Official Receipt]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="45" width="57" height="15" uuid="47dc7031-6dfd-4031-9ea0-e40efeda6f19"/>
+				<text><![CDATA[Subject]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="71" width="57" height="15" uuid="c62ae5fb-67f1-4ff0-99c9-7de4d48c93fd"/>
+				<text><![CDATA[Teacher]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="97" width="57" height="15" uuid="a424997f-b308-47de-87f0-41d690906a48"/>
+				<text><![CDATA[Grade]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="123" width="57" height="15" uuid="1a2fdcea-f4c3-4726-b21a-abcfd44ca4a8"/>
+				<text><![CDATA[Day]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="150" width="57" height="15" uuid="170685c2-bc41-49e1-9d71-e522a317d7c2"/>
+				<text><![CDATA[Period]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="287" y="45" width="75" height="15" uuid="3158c1ef-e566-49b6-b7ca-84d693d6f1e3"/>
+				<text><![CDATA[Student ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="287" y="71" width="75" height="15" uuid="3fb2d9c0-c00c-4b2e-a013-359a429e9572"/>
+				<text><![CDATA[Student Name]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="68" y="45" width="188" height="20" uuid="d26a7354-39bf-4c00-a257-d59362d242ca"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="68" y="71" width="188" height="20" uuid="7609aef9-0e8b-48a0-8b30-e2a7841b0f55"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="68" y="97" width="188" height="20" uuid="c9379fab-eb07-4971-bdfb-7276df4602d6"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="68" y="123" width="188" height="20" uuid="609ec551-0792-4f40-b2c8-4b6c2608c2e9"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="68" y="150" width="188" height="20" uuid="108bd2af-90e0-4f1c-a1c7-4a679c1b5c22"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="372" y="45" width="162" height="20" uuid="c91c283f-6422-4ccf-aae4-bc1972c4133e"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="372" y="71" width="162" height="20" uuid="c93f7d6e-f5be-4ea9-8d17-3e0d731ddd01"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="208" y="247" width="100" height="20" uuid="e1ff77fc-49b4-4f5e-a861-74eca4d8f80f"/>
+				<textElement textAlignment="Center">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Exam Detail]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="82" y="45" width="174" height="20" uuid="9a7ef877-74d4-402c-8528-00e6711d7bd1"/>
+				<textFieldExpression><![CDATA[$P{subject}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="82" y="71" width="174" height="20" uuid="dd864965-b41f-423d-af23-5456effc1777"/>
+				<textFieldExpression><![CDATA[$P{teacher}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="82" y="97" width="174" height="20" uuid="3a9f6834-dae2-4d8d-975b-9d3d8a524675"/>
+				<textFieldExpression><![CDATA[$P{grade}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="82" y="123" width="174" height="20" uuid="83f69de6-c8ed-4893-9b0e-bc6bc72a00d5"/>
+				<textFieldExpression><![CDATA[$P{day}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="82" y="150" width="174" height="20" uuid="17f5e2a8-9f18-46e3-982d-565932974384"/>
+				<textFieldExpression><![CDATA[$P{period}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="384" y="45" width="150" height="20" uuid="cda7f9ad-3851-4fe8-97f7-6becfd0f7543"/>
+				<textFieldExpression><![CDATA[$P{studentId}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="384" y="71" width="150" height="20" uuid="0e46fd9a-2b08-48eb-8d27-895e774cf9cb"/>
+				<textFieldExpression><![CDATA[$P{studentName}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="22" splitType="Stretch">
+			<staticText>
+				<reportElement x="57" y="0" width="127" height="20" uuid="99a99f91-9d68-4b81-ba0d-458d6b0b167f"/>
+				<text><![CDATA[Exam Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="184" y="0" width="100" height="20" uuid="bff1e0d1-80be-4eae-83bc-91684d807473"/>
+				<text><![CDATA[Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="284" y="0" width="100" height="20" uuid="e70a62eb-e557-44e2-97c8-107745cd9988"/>
+				<text><![CDATA[Marks]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="384" y="0" width="100" height="20" uuid="ee21dd3a-d12f-4bdb-9b24-e1714567f134"/>
+				<text><![CDATA[State]]></text>
+			</staticText>
+			<line>
+				<reportElement x="57" y="20" width="427" height="1" uuid="60ba171d-ed1b-4f96-a1e6-2625088fde73"/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="21" splitType="Stretch">
+			<textField>
+				<reportElement x="57" y="0" width="127" height="20" uuid="86b15d33-5fff-41f0-8246-d87d160ab454"/>
+				<textFieldExpression><![CDATA[$F{Exam Name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="184" y="0" width="100" height="20" uuid="0bf37bb1-a6f5-4eb9-babc-496c8d2ad547"/>
+				<textFieldExpression><![CDATA[$F{Date}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="284" y="0" width="100" height="20" uuid="066e425e-b39c-4de3-9635-8016bf4d1a03"/>
+				<textFieldExpression><![CDATA[$F{Marks}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="384" y="0" width="100" height="20" uuid="ccc463d6-0449-4df2-98d5-77b48185822e"/>
+				<textFieldExpression><![CDATA[$F{State}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch">
+			<staticText>
+				<reportElement x="415" y="21" width="130" height="13" uuid="b9076b93-6319-4a4f-bd3e-2bcf726d5cb6"/>
+				<text><![CDATA[Dakuna Education Center,]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="415" y="34" width="130" height="20" uuid="c1d7e679-29b1-4c7c-a9c4-28e92dda5450"/>
+				<text><![CDATA[Manager.]]></text>
+			</staticText>
+			<line>
+				<reportElement x="415" y="20" width="130" height="1" uuid="4ebe5c0e-5faa-4fb4-a57a-d77e75bf49b3"/>
+				<graphicElement>
+					<pen lineStyle="Dotted"/>
+				</graphicElement>
+			</line>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="studentPayment" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="5d0d32de-9279-47e1-a57d-6aa799b430de">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="153"/>
+	<parameter name="subject" class="java.lang.String"/>
+	<parameter name="teacher" class="java.lang.String"/>
+	<parameter name="grade" class="java.lang.String"/>
+	<parameter name="day" class="java.lang.String"/>
+	<parameter name="period" class="java.lang.String"/>
+	<parameter name="studentId" class="java.lang.String"/>
+	<parameter name="studentName" class="java.lang.String"/>
+	<field name="Fee" class="java.lang.String"/>
+	<field name="Date" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="100" splitType="Stretch">
+			<image>
+				<reportElement x="0" y="0" width="73" height="63" uuid="cb53f6f7-eb3e-4b9a-8d48-77ca962e78b3"/>
+				<imageExpression><![CDATA["C:\\Users\\Lahiru Sandeepa\\Documents\\New Folder\\ProjectSMS\\src\\image\\dakuna.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="88" y="0" width="444" height="33" uuid="698fe00a-c4b8-42ad-bf11-30f1d1ed1149"/>
+				<textElement textAlignment="Center">
+					<font size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DAKUNA EDUCATION CENTER]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="432" y="33" width="100" height="18" uuid="b7a3872e-e843-4a92-ab16-25d25821e893"/>
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[Rahula Road,]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="432" y="51" width="100" height="28" uuid="90b70686-1436-4cf7-ae00-218179fb4aa5"/>
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[Matara.]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="211" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="100" height="20" uuid="4e563f4a-ba86-4f48-8e45-538ab370e24c"/>
+				<textElement>
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Official Receipt]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="11" y="39" width="62" height="15" uuid="0f20f8a1-b10c-4595-bf8f-d78fd383d85c"/>
+				<text><![CDATA[Subject]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="11" y="64" width="62" height="15" uuid="4aebc2dd-ff8e-499e-bcf9-d1c18913bb10"/>
+				<text><![CDATA[Teacher]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="11" y="89" width="62" height="15" uuid="b3bd0a7f-a2f6-4f09-b96c-1afcf7e2eb0c"/>
+				<text><![CDATA[Grade]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="11" y="115" width="62" height="15" uuid="cec7ea96-b159-4f8d-9ee6-7fb71416229a"/>
+				<text><![CDATA[Day]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="11" y="142" width="62" height="15" uuid="076e3980-d194-4cbd-b9fb-e4e0e8ea8f77"/>
+				<text><![CDATA[Period]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="88" y="34" width="167" height="20" uuid="3d6ccf46-475a-4e37-a90d-d6dd9e093036"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="88" y="59" width="167" height="20" uuid="466a7ff0-7eae-45c9-99b7-1830b5452108"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="88" y="84" width="167" height="20" uuid="924f6c94-4ba3-4147-9ccf-d66c91b4cc53"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="88" y="110" width="167" height="20" uuid="ffc1ea4f-ec9d-412e-8827-0e613a67365a"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="88" y="137" width="167" height="20" uuid="0b8eefa6-3a28-4a95-856d-c010305339e3"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="317" y="39" width="71" height="15" uuid="a6d5a81b-6aa7-455c-9857-52d47bc2e9a0"/>
+				<text><![CDATA[Student ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="317" y="64" width="71" height="15" uuid="2e39f423-d763-4982-b62c-65d38b3f1658"/>
+				<text><![CDATA[Student Name]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="402" y="34" width="141" height="20" uuid="4fe2cc1f-1bea-4169-b8b2-53e122f0e038"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="402" y="59" width="141" height="20" uuid="2bf2ee83-a37d-4673-bcfa-cafb23556d73"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="185" y="191" width="100" height="20" uuid="877d8241-f918-418b-99e2-a1e6190ddbd2"/>
+				<textElement textAlignment="Center">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Payment Detail]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="100" y="34" width="155" height="20" uuid="57f5857c-0ead-4b67-af10-4193b4c1e4aa"/>
+				<textFieldExpression><![CDATA[$P{subject}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="100" y="59" width="155" height="20" uuid="5d970684-4342-4900-beaa-320904e7165d"/>
+				<textFieldExpression><![CDATA[$P{teacher}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="100" y="84" width="155" height="20" uuid="8e9d97d1-b79b-4981-96b5-863356731b4d"/>
+				<textFieldExpression><![CDATA[$P{grade}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="100" y="110" width="155" height="20" uuid="c15044eb-86db-4704-bea2-c946aa94d59c"/>
+				<textFieldExpression><![CDATA[$P{day}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="100" y="137" width="155" height="20" uuid="6270305a-9848-438c-b1a2-18f889e93741"/>
+				<textFieldExpression><![CDATA[$P{period}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="413" y="34" width="130" height="20" uuid="ad93dd2d-d1e4-4431-946c-15d5658106c7"/>
+				<textFieldExpression><![CDATA[$P{studentId}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="413" y="59" width="128" height="20" uuid="aacc9bab-4df3-4cb4-bfac-6fa5c8648b5a"/>
+				<textFieldExpression><![CDATA[$P{studentName}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="23" splitType="Stretch">
+			<staticText>
+				<reportElement x="135" y="2" width="100" height="20" uuid="5064376e-5762-4b69-ad10-cfbda0a47210"/>
+				<text><![CDATA[Fee]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="235" y="2" width="121" height="20" uuid="2a98dda4-2f4a-4be9-abaf-acd605dcb9a8"/>
+				<text><![CDATA[Date]]></text>
+			</staticText>
+			<line>
+				<reportElement x="135" y="22" width="221" height="1" uuid="22240979-f032-4502-a7bc-c2ed6538115a"/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="21" splitType="Stretch">
+			<textField>
+				<reportElement x="135" y="0" width="100" height="20" uuid="94c14f89-bad3-4b97-bbca-5629dbd1739a"/>
+				<textFieldExpression><![CDATA[$F{Fee}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="235" y="0" width="121" height="20" uuid="84d30907-88d9-4221-9886-875860a6da92"/>
+				<textFieldExpression><![CDATA[$F{Date}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch">
+			<staticText>
+				<reportElement x="402" y="17" width="139" height="16" uuid="313602a7-4fe2-4b6f-8d3c-a9b158000b2f"/>
+				<text><![CDATA[Dakuna Education Center,]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="402" y="33" width="139" height="20" uuid="4deaf45e-e05f-4814-81cc-6606cdea4b7f"/>
+				<text><![CDATA[Manager.]]></text>
+			</staticText>
+			<line>
+				<reportElement x="402" y="16" width="139" height="1" uuid="11019e96-9714-42ef-a797-8dc74156eeb6"/>
+				<graphicElement>
+					<pen lineStyle="Dotted"/>
+				</graphicElement>
+			</line>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

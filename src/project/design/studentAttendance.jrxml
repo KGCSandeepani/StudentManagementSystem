@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="studentAttendance" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="efb1b286-c1b8-4fa3-a223-9628d73e7ad8">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="206"/>
+	<parameter name="subject" class="java.lang.String"/>
+	<parameter name="teacher" class="java.lang.String"/>
+	<parameter name="grade" class="java.lang.String"/>
+	<parameter name="day" class="java.lang.String"/>
+	<parameter name="period" class="java.lang.String"/>
+	<parameter name="studentId" class="java.lang.String"/>
+	<parameter name="studentName" class="java.lang.String"/>
+	<field name="Date" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="116" splitType="Stretch">
+			<image>
+				<reportElement x="0" y="0" width="80" height="69" uuid="9a12e604-e5fe-48c0-9c8b-e2b0c9fb5c54"/>
+				<imageExpression><![CDATA["C:\\Users\\Lahiru Sandeepa\\Documents\\New Folder\\ProjectSMS\\src\\image\\dakuna.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="92" y="0" width="452" height="32" uuid="c1fa6eee-e69d-4833-974c-e9561f27d6e1"/>
+				<textElement textAlignment="Center">
+					<font size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DAKUNA EDUCATION CENTER]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="444" y="42" width="100" height="17" uuid="ffdffdf0-692a-4844-8799-9bce223126e5"/>
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[Rahula Road,]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="444" y="59" width="100" height="20" uuid="0997796a-8d4b-40a6-ba94-e0058287bd2c"/>
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[Matara.]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="251" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="92" height="20" uuid="3438ff4b-e3af-43d9-b888-c6d8416a2198"/>
+				<textElement>
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Official Receipt]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="39" width="63" height="15" uuid="41f2b879-3a22-4a0a-b4c0-158a65ce65c5"/>
+				<text><![CDATA[Subject]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="64" width="63" height="15" uuid="73cf4a58-f915-4665-ae71-70dc1c70a5bf"/>
+				<text><![CDATA[Teacher]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="89" width="63" height="15" uuid="89d4ccf2-5bf7-4832-a56a-0b8891b4a24a"/>
+				<text><![CDATA[Grade]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="114" width="63" height="15" uuid="9e358faa-70eb-4caf-8ce0-d1aae504b188"/>
+				<text><![CDATA[Day]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="139" width="63" height="15" uuid="b462d878-d680-4978-aa6f-a8544a507f34"/>
+				<text><![CDATA[Period]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="281" y="39" width="77" height="15" uuid="a8a76ece-ef99-4baa-8101-3c72f9ec62da"/>
+				<text><![CDATA[Student ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="281" y="64" width="77" height="15" uuid="eea9da11-8fed-45cb-8eb9-a98ac05885e5"/>
+				<text><![CDATA[Student Name]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="80" y="34" width="159" height="20" uuid="ab4cbe01-3394-4fd3-b9da-ac2842e65cb6"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="80" y="59" width="159" height="20" uuid="98bdba86-5f32-4842-9317-f8637c4a0a43"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="80" y="84" width="159" height="20" uuid="734ed028-87f3-41ed-b2d5-dbd0c4b63673"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="80" y="109" width="159" height="20" uuid="778896a5-3424-4426-bc2e-799a0833e2ad"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="80" y="139" width="159" height="20" uuid="35594905-8284-4021-bf9a-e8e9237dc1bd"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="369" y="34" width="158" height="20" uuid="7eb6c682-cb27-4c75-95f2-4649d2f90c2e"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="369" y="64" width="158" height="20" uuid="4a19263b-b84f-44d1-bc78-ed3a840a3263"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="210" y="218" width="134" height="20" uuid="3a111f99-25c2-400f-88d5-b17b634ecfab"/>
+				<textElement textAlignment="Center">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Student Attendance]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="92" y="34" width="147" height="20" uuid="c88766b7-ca0b-426d-bf11-ae445cf47fba"/>
+				<textFieldExpression><![CDATA[$P{subject}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="92" y="59" width="147" height="20" uuid="6d1fa8af-593d-4288-83c3-22149709f7e9"/>
+				<textFieldExpression><![CDATA[$P{teacher}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="92" y="84" width="147" height="20" uuid="58704674-a8de-4c3a-8649-caa9965fc4af"/>
+				<textFieldExpression><![CDATA[$P{grade}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="92" y="109" width="147" height="20" uuid="cfa13079-1a40-4d05-ad2e-86b9bf0f3cd2"/>
+				<textFieldExpression><![CDATA[$P{day}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="92" y="139" width="147" height="20" uuid="8847b007-c2a4-46ea-b55b-50c9698d8a5f"/>
+				<textFieldExpression><![CDATA[$P{period}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="379" y="34" width="148" height="20" uuid="b6f5f60e-3571-45e5-8ca0-f9c1c76ba1d1"/>
+				<textFieldExpression><![CDATA[$P{studentId}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="379" y="64" width="148" height="20" uuid="0fd90dd5-b144-4613-a0e0-bcd478ca45d1"/>
+				<textFieldExpression><![CDATA[$P{studentName}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="20" splitType="Stretch">
+			<staticText>
+				<reportElement x="227" y="0" width="100" height="20" uuid="a3714c0a-2b0d-4e35-834d-52845b32d700"/>
+				<text><![CDATA[Date]]></text>
+			</staticText>
+			<line>
+				<reportElement x="227" y="19" width="100" height="1" uuid="a68853a4-9165-4c30-9ab2-bab3c2732e02"/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="21" splitType="Stretch">
+			<textField>
+				<reportElement x="227" y="0" width="100" height="20" uuid="9b73222a-290b-46b3-bf00-85f5aa05a3d2"/>
+				<textFieldExpression><![CDATA[$F{Date}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch">
+			<staticText>
+				<reportElement x="399" y="19" width="128" height="15" uuid="9d501dbc-cf81-45ac-8043-59da9a75b48b"/>
+				<text><![CDATA[Dakuna Education Center,]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="399" y="34" width="128" height="20" uuid="5f703932-0002-45fc-81dc-ad7ac2b455c0"/>
+				<text><![CDATA[Manager.]]></text>
+			</staticText>
+			<line>
+				<reportElement x="399" y="18" width="128" height="1" uuid="f9529f2f-560a-48d9-a9fc-f23711fc2876"/>
+				<graphicElement>
+					<pen lineStyle="Dotted"/>
+				</graphicElement>
+			</line>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
